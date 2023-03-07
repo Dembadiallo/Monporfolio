@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Qicksand', sans-serif;
+}
+
+body{
+    width:100%;
+    height:100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding: 20px 100px;
+    background-color: black;
+    backface-visibility: white;
+    
+}
+
+.foot{
+    width: 100%;
+    padding: 20px;
+    text-align: 50px;
+
+}
+.container:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background: url(images/trink.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter:blur(50px);
+    background-position: right;
+}
+
+.content-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 10px 10px 29px #fff;
+}
+
+.left{
+    height: 100%;
+    background: url(images/trink.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+h3{
+    position: relative;
+    padding-bottom: 47px;
+    margin-bottom: 17px;
+    color: #fff;
+}
+
+h3:after{
+    content: '';
+    position: absolute;
+    left: 50px;
+    bottom:0px;
+    transform: translatex(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.field{
+    width: 100%;
+    padding: 0,5rem 1rem;
+    outline: none;
+    border: none #131010;
+    border-bottom: 2px solid white;
+    background-color: black;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3%;
+    color: white;
+}
+
+.field:hover{
+    background-color: black;
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0,5rem 1rem;
+    background-color: #755229;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3%;
+    margin: 10px;
+    padding: 10px ;
+}
+
+.btn:hover{
+    background-color: #755229;
+    padding: 10px ;
+    margin: 0px;
+    
+}
+
+@media screen and (man-width:880px) {
+    .contact-box{
+        grid-template-columns: 1fr;
+        height: 200px;
+    }
+    
+}
